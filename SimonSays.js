@@ -16,6 +16,7 @@ class simonGame{
         for (let c = 0; c < this.length; c++){
              this.sequence += colors[Math.floor(Math.random() * colors.length)];
         }
+        this.remaining = this.sequence;
         console.log(this.sequence);
     }
     addToSequence(){
@@ -26,9 +27,18 @@ class simonGame{
         this.remaining = this.sequence;
     }
     lightUpSequence(){
-
+        let order = this.sequence;
+        while (order.length > 0){
+            
+        }
     }
-    checkAgainst(){
-
+    checkAgainst(input){
+        if (input != this.remaining[0]){
+            return false;
+        }
+        if (this.remaining.length != 1){
+        this.remaining = this.remaining.slice(1);
+        }
+        return true;
     }
 }

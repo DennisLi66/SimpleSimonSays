@@ -29,7 +29,10 @@ class simonGame{
     lightUpSequence(){
         let order = this.sequence;
         while (order.length > 0){
-            
+            if (order[0] == 'R'){
+
+            }
+            order = order.slice(1);
         }
     }
     checkAgainst(input){
@@ -40,5 +43,43 @@ class simonGame{
         this.remaining = this.remaining.slice(1);
         }
         return true;
+    }
+    changeHue(code){
+        if (code == "R1"){
+            document.getElementById("rightH").style.backgroundColor = "rgb(179, 179, 179)";
+        }
+        else if (code == "R2"){
+            document.getElementById("rightH").style.backgroundColor = "black";
+        }
+        else if (code == "T1"){
+            document.getElementById("topH").style.backgroundColor = "rgb(247, 193, 184)";
+        }
+        else if (code == "T2"){
+            document.getElementById("topH").style.backgroundColor = "crimson";
+        }
+        else if (code == "L1"){
+            document.getElementById("leftH").style.backgroundColor = "rgb(158, 201, 158)";
+        }
+        else if (code == "L2"){
+            document.getElementById("leftH").style.backgroundColor = "green";
+        }
+        else if (code == "B1"){
+            document.getElementById("bottomH").style
+        }
+        else if (code == "B2"){
+
+        }
+    }
+    disableHover(){
+        document.getElementById("tH").innerHTML = "<div id='topH'></div>";
+        document.getElementById("rH").innerHTML = "<div id='rightH'></div>";
+        document.getElementById("lH").innerHTML = "<div id='leftH'></div>";
+        document.getElementById("bH").innerHTML = "<div id='bottomH'></div>";
+    }
+    enableHover(){
+        document.getElementById("tH").innerHTML = "<div id='cTop'></div>";
+        document.getElementById('rH').innerHTML = "<div id='cLeft'></div>";
+        document.getElementById("lH").innerHTML = "<div id='cRight'></div>";
+        document.getElementById("bH").innerHTML = "<div id='CBtm'></div>";
     }
 }

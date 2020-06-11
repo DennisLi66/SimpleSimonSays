@@ -10,11 +10,23 @@ body{
     /* padding-top: 20%; */
     position: absolute;
     display: block;
-    transition-duration: 1s;
+    transition-duration: 0.2s;
 }
 
 #cTop:hover{
     background-color: rgb(247, 193, 184);
+}
+
+#topH{
+    top:0;
+    left: 40vw;
+    background-color: crimson;
+    width: 20vw;
+    height: 20vh;
+    /* padding-top: 20%; */
+    position: absolute;
+    display: block;
+    transition-duration: 0.2s;  
 }
 
 #cBtm{
@@ -25,10 +37,21 @@ body{
     position: absolute;
     display: block;
     bottom:0;
-    transition-duration: 1s;
+    transition-duration: 0.2s;
 }
 #cBtm:hover{
     background-color: rgb(210, 210, 252);
+}
+
+#bottomH{
+    left: 40vw;
+    width: 20vw;
+    height: 20vh;
+    background-color: blue;
+    position: absolute;
+    display: block;
+    bottom:0;
+    transition-duration: 0.2s;
 }
 
 #cLeft{
@@ -45,6 +68,17 @@ body{
     background-color: rgb(158, 201, 158);
 }
 
+#LeftH{
+    left:0;
+    background-color: green;
+    width: 20vw;
+    height: 20vh;
+    top:40vh;
+    position: absolute;
+    display: block;
+    transition-duration: 0.2s; 
+}
+
 #cRight{
     right: 0;
     top: 40%;
@@ -53,11 +87,31 @@ body{
     background-color: black;
     position: absolute;
     display: block;
-    transition-duration: 1s;
+    transition-duration: 0.2s;
 }
 #cRight:hover{
     background-color: rgb(179, 179, 179);
 }
+
+
+#RightH{
+    right: 0;
+    top: 40%;
+    width: 20vw;
+    height: 20vh;
+    background-color: black;
+    position: absolute;
+    display: block;
+    transition-duration: 0.2s;
+}
+
+
+
+
+
+
+
+
 
 #c1,#cL,#cR,#cB{
 width: 20vw;

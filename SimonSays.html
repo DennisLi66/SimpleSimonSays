@@ -4,12 +4,20 @@
 <script src='SimonSays.js'></script>
 </head>
 <!-- <body onload="drawBasic()"> -->
-    <body>
+    <body onload="setScore()">
     <div id = "tH">
-        <div id="cTop">T</div>
+        <div id="cTop"></div>
     </div>
-    <div id="cLeft">L</div>
-    <div id="cRight">R</div>
-    <div id="cBtm">B</div>
-    <div id="cSB">Scoreboard</div>
+    <div id = "lH">
+        <div id="cLeft"></div>
+    </div>
+    <div id="rH">
+        <div id="cRight"></div>
+    </div>
+    <div id="bH">
+        <div id="cBtm"></div>
+    </div>
+    <div id="cSB">Scoreboard<br>
+        <button onclick="runGame()">Run Game</button>
+    </div>
 </body>

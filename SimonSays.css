@@ -68,7 +68,7 @@ body{
     background-color: rgb(158, 201, 158);
 }
 
-#LeftH{
+#leftH{
     left:0;
     background-color: green;
     width: 20vw;
@@ -94,7 +94,7 @@ body{
 }
 
 
-#RightH{
+#rightH{
     right: 0;
     top: 40%;
     width: 20vw;
@@ -126,4 +126,5 @@ height: 20vh;
     height: 20vh;
     position: absolute;
     display: block;
+    text-align: center;
 }
